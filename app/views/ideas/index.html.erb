@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<div id="pins" class="transitions-enabled">
+      <% @ideas.each do |idea| %>
+     <div class="box panel panel-default">
+       <%= image_tag idea.picture_url() if idea.picture? %>
+        <h2> <%= link_to idea.title, idea %></h2>
+        <div class="desc">
+          <%= idea.description %>
+        </div>
+        <p class="user">
+          
+          <%= link_to 'Edit', edit_idea_path(idea) %>
+        </p>
+     </div>
+      <% end %>
+</div>
+
+
+
+
+
+
