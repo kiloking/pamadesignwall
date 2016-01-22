@@ -72,6 +72,8 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    masonry-rails (0.2.4)
+      railties
     mime-types (2.99)
     mini_magick (3.8.0)
       subexec (~> 0.2.1)
@@ -161,6 +163,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  masonry-rails (~> 0.2.4)
   mini_magick (= 3.8.0)
   pg
   rails (= 4.2.5)
