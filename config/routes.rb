@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tags/:tag', to: 'ideas#index' , as: :tag
   get 'pages/info'
 
   resources :ideas
