@@ -1,0 +1,14 @@
+defaults: &defaults
+  app_name: "Rails Newbie"
+  facebook_app_id: "1072389282793197"
+  facebook_secret: "57ab8f433e25457130d5c76b4c6fb2b0"
+
+development:
+  <<: *defaults
+  domain: "https://powerful-ravine-43623.herokuapp.com/"
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
