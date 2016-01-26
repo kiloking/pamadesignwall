@@ -8,6 +8,12 @@ gem 'carrierwave'
 gem 'mini_magick', '3.8.0'
 gem 'masonry-rails', '~> 0.2.4'
 gem 'acts-as-taggable-on', '~> 3.5'
+gem 'devise'
+gem 'bcrypt'
+gem "settingslogic" #密鑰隱藏功能
+gem "omniauth"
+gem "omniauth-facebook" 
+gem "auto-facebook", "0.42"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

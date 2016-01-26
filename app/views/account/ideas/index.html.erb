@@ -1,0 +1,29 @@
+<div class="col-md-12">
+
+  <h2 class="text-center"> 我發表過的文章 </h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th> 縮圖 </th>
+        <th> 標題 </th>
+        <th> 內文 </th>
+        <th> 發表時間 </th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+    
+    <tbody>
+      <% @ideas.each do |idea| %>
+        <tr>
+          <td>  <%= image_tag idea.picture_url(:thumb) if idea.picture? %></td> 
+          <td> <%= truncate(idea.title ,length: 25) %> </td> 
+          <td> <%= simple_format(idea.description) %> </td> 
+          <td> <%= idea.updated_at.to_s(:long) %> </td> 
+          <td> <%= link_to('Edit', edit_idea_path(idea), class: "btn btn-info btn-xs") %></td>
+          <td> <%= link_to('Delete', idea_path(idea), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger btn-xs") %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

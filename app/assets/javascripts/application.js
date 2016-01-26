@@ -16,4 +16,16 @@
 //= require turbolinks
 //= require_tree .
 
+ 
 
+$(function(){
+  $('.tag_btn').click(function() {
+      $(this).html('I am clicked');
+      $("#idea_tag_list.val()").append('aaa');  
+  });
+
+
+  $("#idea_tag_list").blur(function () {
+        alert("Hello 阿舍 !!");
+    })
+});
