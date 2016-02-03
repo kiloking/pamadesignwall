@@ -5,7 +5,7 @@ defaults: &defaults
 
 development:
   <<: *defaults
-  domain: "http://localhost:3000"
+  domain: "https://powerful-ravine-43623.herokuapp.com"
 
 test:
   <<: *defaults
