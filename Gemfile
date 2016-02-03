@@ -13,7 +13,7 @@ gem 'bcrypt'
 gem "settingslogic" #密鑰隱藏功能
 gem "omniauth"
 gem "omniauth-facebook" 
-gem "auto-facebook", "0.42"
+gem "auto-facebook"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

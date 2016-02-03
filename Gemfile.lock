@@ -199,7 +199,7 @@ PLATFORMS
 
 DEPENDENCIES
   acts-as-taggable-on (~> 3.5)
-  auto-facebook (= 0.42)
+  auto-facebook
   bcrypt
   byebug
   carrierwave
